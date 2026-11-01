@@ -22,7 +22,9 @@ const HeroImage = () => {
       loop: true,
     });
 
-    return () => animation.cancel();
+    return () => {
+      animation.cancel();
+    };
   }, []);
 
   return (
