@@ -3,7 +3,6 @@ import { cn } from "@/lib/utils";
 
 
 import {
-  Briefcase,
   FolderGit2,
   GraduationCap,
   HomeIcon,
@@ -18,7 +17,6 @@ import { Dock, DockIcon, DockItem, DockLabel } from '@/components/animation/Dock
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import FramerWrapper from "./animation/FramerWrapper";
 import { usePathname } from "next/navigation";
 
 const Navbar = () => {
@@ -97,13 +95,16 @@ const Navbar = () => {
 
   return (
 
-    <div className={`fixed top-5 right-0 left-0 px-0 sm:px-5 m-auto w-full sm:w-fit bg-transparent z-[+9999999] ${scrolling ? "hidden":"block"}`}>
-    <Dock className='items-end pb-3 rounded-full'>
+    <div className={`fixed top-3 sm:top-5 right-0 left-0 px-2 sm:px-5 m-auto w-full sm:w-fit bg-transparent z-[+9999999] ${scrolling ? "hidden":"block"}`}>
+    <Dock className='items-end pb-2 sm:pb-3 rounded-full'>
       {data.map((item, idx) => (
         <Link href={item.href} key={idx}>
 
         <DockItem
-          className={cn("aspect-square rounded-full bg-gray-200 dark:bg-neutral-800",pathname === item.href && " bg-gray-100 !border !border-primary-sky")}
+          className={cn(
+            "aspect-square rounded-full border border-white/60 bg-slate-200/75 text-slate-800 shadow-sm backdrop-blur-md transition-colors dark:border-neutral-700 dark:bg-neutral-800/80 dark:text-neutral-100",
+            pathname === item.href && "!border-primary-sky bg-white/90 text-[#2f7df4] shadow-md shadow-blue-500/15 dark:bg-neutral-700"
+          )}
           >
           <DockLabel >{item.title}</DockLabel>
           <DockIcon className={cn(pathname === item.href && "text-[#2f7df4]")}>{item.icon}</DockIcon>

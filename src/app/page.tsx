@@ -15,7 +15,7 @@ export default function Home() {
         x={-100}
       >
         <HeroTexts />
-        <div className="h-fit w-full p-4 flex gap-4">
+        <div className="h-fit w-full p-3 sm:p-4 flex flex-wrap gap-3 sm:gap-4 max-sm:justify-center">
           <SocialLinks />
         </div>
       </FramerWrapper>

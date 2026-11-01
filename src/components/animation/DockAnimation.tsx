@@ -108,7 +108,7 @@ function Dock({
           mouseX.set(Infinity);
         }}
         className={cn(
-          'mx-auto flex w-fit gap-1.5 sm:gap-4 rounded-2xl bg-gray-50 px-4 dark:bg-neutral-900',
+          'mx-auto flex w-fit gap-1 sm:gap-4 rounded-2xl border border-white/70 bg-slate-100/75 px-2 sm:px-4 shadow-lg shadow-slate-900/10 backdrop-blur-xl dark:border-neutral-700/70 dark:bg-neutral-900/75',
           className
         )}
         style={{ height: panelHeight }}
@@ -152,7 +152,7 @@ function DockItem({ children, className }: DockItemProps) {
       onFocus={() => isHovered.set(1)}
       onBlur={() => isHovered.set(0)}
       className={cn(
-        'relative inline-flex items-center justify-center',
+        'relative inline-flex shrink-0 items-center justify-center',
         className
       )}
       tabIndex={0}

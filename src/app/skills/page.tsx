@@ -1,5 +1,5 @@
 import Heading from "@/components/Heading";
-import SkillsFooter from "@/components/SkillsFotter";
+import SkillsFooter from "@/components/SkillsFooter";
 import { Badge } from "@/components/ui/badge";
 import { LightbulbIcon } from "lucide-react";
 import FramerWrapper from "@/components/animation/FramerWrapper";
@@ -45,6 +45,14 @@ const skillPage = () => {
           </h1>
           <div className="w-full grid grid-cols-7 max-lg:grid-cols-4 max-md:grid-cols-3 max-sm:grid-cols-2 gap-4">
             <SkillsFooter items={portfolioConfig.skills.tools} />
+          </div>
+        </FramerWrapper>
+        <FramerWrapper className="block w-full" y={100} delay={0.36}>
+          <h1 className="gap-2 text-2xl font-poppins text-primary font-semibold flex text_underline relative max-sm:text-xl mb-4">
+            AI Tools
+          </h1>
+          <div className="w-full grid grid-cols-7 max-lg:grid-cols-4 max-md:grid-cols-3 max-sm:grid-cols-2 gap-4">
+            <SkillsFooter items={portfolioConfig.skills.aiTools} />
           </div>
         </FramerWrapper>
       </div>

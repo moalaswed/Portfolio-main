@@ -80,12 +80,10 @@ export const portfolioConfig = {
   // Skills and Roles
   skills: {
     roles: [
-      "Freelancer",
-      "Blogger",
-      "Gamer",
-      "Creator",
+      "Flutter developer",
       "Student",
-      "Contributer",
+      "Painstaking",
+      "Web Developer",
     ],
     // Technical Skills
     programmingLanguages: [
@@ -174,10 +172,39 @@ export const portfolioConfig = {
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
       },
     ],
+    aiTools: [
+      {
+        name: "ChatGPT",
+        icon: "/openai.svg",
+      },
+      {
+        name: "Google Gemini",
+        icon: "https://cdn.simpleicons.org/googlegemini/8E75B2",
+      },
+      {
+        name: "NotebookLM",
+        icon: "/notebooklm.svg",
+      },
+      {
+        name: "Google AI Studio",
+        icon: "/google-ai-studio.svg",
+      },
+      {
+        name: "Claude",
+        icon: "https://cdn.simpleicons.org/claude/D97757",
+      },
+    ],
   },
 
   // Education Information
   education: [
+    {
+      degree: "Master's Student in Information Technology",
+      institution: "Libyan Academy for Postgraduate Studies",
+      location: "Tripoli, Libya",
+      period: "2026",
+      description: "Pursuing a master's degree in Information Technology.",
+    },
     {
       degree: "Bachelor of Internet Technologies",
       institution: "Faculty of Information Technology, University of Tripoli",
